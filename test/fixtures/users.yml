@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account: one
+  name: MyString
+  birthday: 2022-11-22
+  gender: 1
+
+two:
+  account: two
+  name: MyString
+  birthday: 2022-11-22
+  gender: 1
