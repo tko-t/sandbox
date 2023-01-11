@@ -10,7 +10,7 @@ module SB
     end
 
     def error_message
-      I18n.t(['ed', 'errors', self._key || self.class.class_name.underscore].join('.'))
+      I18n.t(['sb', 'errors', self._key || self.class.class_name.underscore].join('.'))
     end
 
     def _key; end
