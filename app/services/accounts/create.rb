@@ -13,8 +13,8 @@ class Accounts::Create < Service
 
   def run!
     ActiveRecord::Base.transaction do
-      profile = Profile.new(attr_to_h(self.class.profile_attrs))
-      @account = Account.create!(attr_to_h(self.class.account_attrs).merge(profile: profile))
+      @account = Account.create!(attr_to_h(self.class.account_attrs))
+      @profile = Profile.create!(attr_to_h(self.class.profile_attrs).merge(account: @account))
     end
   end
 end

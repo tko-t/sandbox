@@ -29,4 +29,6 @@ class Profile < ApplicationRecord
   belongs_to :city
 
   enum gender: { male: 0, female: 1 }
+
+  validates :address, :birthday, :first_name, :last_name, :gender, :zip, :account, :city, :country, presence: true
 end
